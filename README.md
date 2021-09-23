@@ -12,3 +12,15 @@ schema_view = get_schema_view(
     generator_class=BothHttpAndHttpsSchemaGenerator, # Here
     permission_classes=(AllowAny,)
 )
+
+
+
+## Mongo DB
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'local',
+    }
+}
+

@@ -31,5 +31,4 @@ jobs:
       env:
         DJANGO_SETTINGS_MODULE: your_project.settings
       run: |
-        // python manage.py test
         python test.py

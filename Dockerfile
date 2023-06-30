@@ -1,1 +1,1 @@
-echo Hi there 👋
+RUN echo "Hi there 👋"

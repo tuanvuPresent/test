@@ -3,10 +3,10 @@ name: Django Test
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   test:
@@ -31,4 +31,5 @@ jobs:
       env:
         DJANGO_SETTINGS_MODULE: your_project.settings
       run: |
-        python manage.py test
+        // python manage.py test
+        python test.py

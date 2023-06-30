@@ -22,5 +22,5 @@ jobs:
 
     - name: Build and Push Docker image
       run: |
-        docker build -t docker.pkg.github.com/tuanvupresent/test/image-name:${{ github.sha }} .
-        docker push docker.pkg.github.com/tuanvupresent/test/image-name:${{ github.sha }}
+        docker build -t docker.pkg.github.com/tuanvupresent/test/test:${{ git rev-parse HEAD }} .
+        docker push docker.pkg.github.com/tuanvupresent/test/test:${{ git rev-parse HEAD }}

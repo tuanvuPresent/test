@@ -5,4 +5,3 @@ CPU_INFO=$(top -b -d1 -n1|grep -i "Cpu(s)"|head -c21|cut -d ' ' -f3|cut -d '%' -
 RAM_INFO=$(free -m | awk '/^Mem:/ {printf "%d", $3}')
 
 echo "$CURRENT_TIME,$RAM_INFO,$CPU_INFO" >> system_info.txt
-

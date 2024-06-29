@@ -1,3 +1,6 @@
+from math import atan2, sqrt, sin, radians, cos
+
+
 def distance_km(coordinate1, coordinate2):
     R = 6373.0
     lat1, lon1 = radians(coordinate1[0]), radians(coordinate1[1])
